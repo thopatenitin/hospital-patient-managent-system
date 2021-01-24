@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="nurse_module_IPD_MasterPage" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../theme/mastertheme.css" rel="stylesheet" type="text/css" />
+    <link href="../theme/vmenu.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+            .auto-style5 {
+                width: 136%;
+            }
+        </style>
+    <link href="../../theme/mastertheme.css" rel="stylesheet" type="text/css" />
+    <link href="../../theme/vmenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="auto-style13" >
+
+        <table style="padding:0;margin:0;" id="auto-style15">
+    <tr>
+           <td  id="css4" >
+               <asp:Image ID="Image2" runat="server" Height="66px" ImageUrl="~/NewFolder1/logo.png" Width="203px" />
+           </td>
+            <td  id="css6" >
+                  <asp:Label ID="Label1" runat="server" Text="PALM BEACH " Font-Bold="True" Font-Italic="True" Font-Size="29pt" ForeColor="Black"></asp:Label>&nbsp;<asp:Label ID="Label3" runat="server" ForeColor="Black" Text="Hospital &amp; Diagnostic Center"></asp:Label>
+           </td>
+               </tr>
+    <tr>
+            <td  id="css5" >
+                <asp:Image ID="Image1" runat="server" Height="54px" ImageUrl="~/NewFolder1/thZKY6CTL4.jpg" Width="49px" />
+                <asp:LinkButton ID="LinkButton2" runat="server" ></asp:LinkButton>
+            </td>
+            <td id="css7" >
+                
+                <table class="auto-style5">
+                    <tr>
+                        <td>
+                
+                <asp:Label ID="Label2" runat="server" Text="Dashboard"></asp:Label>
+            
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td >
+            
+            
+                <asp:LinkButton ID="LinkButton45" runat="server" >LogOut</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+               </tr>
+             <tr>
+            <td  id="css2"  >
+                <table  border="1" >
+                    <tr>
+                        <td class="auto-style13" style="vertical-align:top;">
+                            <table id="profile" class="auto-style3">
+                                <tr>
+                                    <td id="tdcss1" rowspan="2" style="vertical-align:top;" class="auto-style12">
+                                        <asp:Image ID="Image3" runat="server" Height="63px" ImageUrl="~/NewFolder1/patient.png" Width="67px" />
+                                    </td>
+                                    <td id"tdcss2">
+                                        <asp:Label ID="Label62" runat="server" Text="Patient No."></asp:Label>
+                                        <asp:Label ID="Label63" runat="server"></asp:Label>
+                                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                                        </asp:ScriptManager>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="Label64" runat="server" Text="Patient Name."></asp:Label>
+                                        <asp:Label ID="Label65" runat="server"></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style19">
+                            <asp:Label ID="Label67" runat="server" Text="Department"></asp:Label>
+                            :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="department_desc" DataValueField="department_code" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:palmConnectionString %>" SelectCommand="SELECT [department_code], [department_desc] FROM [palm_department]"></asp:SqlDataSource>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DropDownList2" ErrorMessage="Select Department"></asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style14">
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <asp:Label ID="Label68" runat="server" Text="Consultant Dr."></asp:Label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="SqlDataSource2" DataTextField="doctor_name" DataValueField="doctor_name" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
+                                    </asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:palmConnectionString %>" SelectCommand="SELECT [doctor_name], [emp_code] FROM [palm_doctor_employee] WHERE ([department] = @department)">
+                                        <SelectParameters>
+                                            <asp:ControlParameter ControlID="DropDownList2" Name="department" PropertyName="SelectedValue" Type="String" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="DropDownList3" ErrorMessage="Select Doctor"></asp:RequiredFieldValidator>
+                                </ContentTemplate>
+                                <Triggers>
+                                    <asp:AsyncPostBackTrigger ControlID="DropDownList3" EventName="SelectedIndexChanged" />
+                                </Triggers>
+                            </asp:UpdatePanel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style18">
+                            <asp:Label ID="Label69" runat="server" Text="Consultant Dr."></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox5" runat="server" OnTextChanged="TextBox5_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style13">
+                            <asp:Label ID="Label70" runat="server" Text="Consultant Dr."></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox6" runat="server" OnTextChanged="TextBox6_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style16">
+                            <asp:Label ID="Label71" runat="server" Text="Room Type:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox1" runat="server" Enabled="False" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">
+                            <asp:Label ID="Label72" runat="server" Text="Room No:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox2" runat="server" Enabled="False" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">
+                            <asp:Label ID="Label73" runat="server" Text="Bed No:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox3" runat="server" Enabled="False" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+                        </td>
+                    </tr>
+                </table>
+                 </td>
+            <td style="vertical-align:top; " id="css1" >
+                 <asp:ContentPlaceHolder id="Content_td" runat="server">
+        
+                     <p>
+                         &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                 </td>
+               </tr>
+             </table>
+    </div>
+
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿body {
+background-color:silver;
+border:1px solid blue;
+}  
+ #css1 {position:relative;
+         align-self:center;
+                height: 60px;
+                width: 900px;
+                 vertical-align:top;
+            }
+            #css2 {
+                height: 59px;
+                vertical-align:top;
+            }
+            #css4 {
+                height: 33px;
+                background-color:deepskyblue;
+            }
+            #css5 {
+                height: 22px;
+                 background-color:ghostwhite;
+            }
+            #css6 {
+                text-align:center;
+                background-color:deepskyblue;
+                height: 33px;
+                width: 1200px;
+            }
+            #css7 {
+                height: 22px;
+                width: 757px;
+                background-color:ghostwhite;
+            }
+            #css11 {
+                vertical-align:top;
+                
+            }

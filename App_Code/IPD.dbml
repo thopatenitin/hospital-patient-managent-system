@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="palm" Class="IPDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-SP4LJ9B;Initial Catalog=palm;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="palmConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.room_master" Member="room_masters">
+    <Type Name="room_master">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="room_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="room_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="room_type" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="rent" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="no_bed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="occupied" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_pateints_kin_details" Member="palm_pateints_kin_details">
+    <Type Name="palm_pateints_kin_detail">
+      <Column Name="kin_detail_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="kin_next_name" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="kin_reln_pateint" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="kin_tele_no" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_country_master" Member="palm_country_masters">
+    <Type Name="palm_country_master">
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country_code" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="country_desc" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="nationality_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_state_master" Member="palm_state_masters">
+    <Type Name="palm_state_master">
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="state_code" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="state_desc" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_nurse_charges" Member="palm_nurse_charges">
+    <Type Name="palm_nurse_charge">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="room_type" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.basic_charges" Member="basic_charges">
+    <Type Name="basic_charge">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="emergency_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="multipara_monitor_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ecg_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="oxygen_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ventilator_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="nebulisation_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ryles_tube" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="intubation" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="syringe_pump" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="cathetor" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="central_line" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="gastrick_leavage" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="registration_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_complain" Member="palm_ipd_complains">
+    <Type Name="palm_ipd_complain">
+      <Column Name="complain_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="complain" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_pathlogy_billm" Member="palm_ipd_pathlogy_billms">
+    <Type Name="palm_ipd_pathlogy_billm">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="memo" Type="System.String" DbType="VarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="total" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="advanced" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="balence" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_IPD_pathlogy_bills" Member="palm_IPD_pathlogy_bills">
+    <Type Name="palm_IPD_pathlogy_bill">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="memo" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="test_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="charge" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_diagnosis_master" Member="palm_ipd_diagnosis_masters">
+    <Type Name="palm_ipd_diagnosis_master">
+      <Column Name="opd_diagnosis_master_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_final_diagnosis" Member="palm_ipd_final_diagnosis">
+    <Type Name="palm_ipd_final_diagnosi">
+      <Column Name="ipd_diagnosis_master_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="master_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Final_diagnosis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="final_remark" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_provisional_diagnosis" Member="palm_ipd_provisional_diagnosis">
+    <Type Name="palm_ipd_provisional_diagnosi">
+      <Column Name="ipd_diagnosis_master_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="master_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pro_diagnosis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pro_remark" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.intake_output" Member="intake_outputs">
+    <Type Name="intake_output">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="io_id" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="temp" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="pulse" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="bp" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="rr" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="spo" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="oxy" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="rbs" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="oral" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="iv" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="urine" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="stool" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="aspiration" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="bedsore" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_intake_output" Member="master_intake_outputs">
+    <Type Name="master_intake_output">
+      <Column Name="io_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_medication" Member="palm_ipd_medications">
+    <Type Name="palm_ipd_medication">
+      <Column Name="medication_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="drug" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="frequency" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="timea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timeb" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timec" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="route" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_pathlogy" Member="palm_ipd_pathlogies">
+    <Type Name="palm_ipd_pathlogy">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="path_id" Type="System.String" DbType="VarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ref_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="is_done" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_history" Member="palm_ipd_histories">
+    <Type Name="palm_ipd_history">
+      <Column Name="history_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="maritual_history" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="past_medical_history" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="past_surgical_history" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="bowel" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="bladder" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="appetite" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="sleep_pattern" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="addiction" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="allergic_history" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="menstrul_history" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_discharge_medication" Member="palm_discharge_medications">
+    <Type Name="palm_discharge_medication">
+      <Column Name="medication_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="patient_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="drug" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="days" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timeb" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timec" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="timed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_pro_diagnosis" Member="palm_ipd_pro_diagnosis">
+    <Type Name="palm_ipd_pro_diagnosi">
+      <Column Name="ipd_diagnosis_master_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="master_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pro_diagnosis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pro_remark" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_pathlogy_slave" Member="palm_ipd_pathlogy_slaves">
+    <Type Name="palm_ipd_pathlogy_slave">
+      <Column Name="slave_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="path_id" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="test_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="is_done" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_genralexamination" Member="palm_ipd_genralexaminations">
+    <Type Name="palm_ipd_genralexamination">
+      <Column Name="ge_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="built" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="pulse" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="rr" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="pallor" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="cyanosis" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="clubing" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="peripheral_pulse" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="jvp" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="hjr" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="oedema" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="adenopathy" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="icterus" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="erruptions" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="other" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="cvs" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="r_s" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="p_a" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="cns" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="ps_pv" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="bp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tenp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.final_bill" Member="final_bills">
+    <Type Name="final_bill">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="ipd_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="registration_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="stay_charges_iccu_nicu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="stay_charges_delux_spl_genral" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="emergency_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="dressing_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="multipara_monitor_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ecg_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="oxygen_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ventilator_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="anaeshtetist_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="consultation_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="consultation_charges1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="consultation_charges2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="assistant_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="pathology_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="surgeon_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="sonography_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="nebulisation_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="bedside_sonography_2decho" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ryles_tube" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="intubation" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="syringe_pump" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="cathetor" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="surgical_instrument_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="central_line" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="nursing_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="gastric_lavag" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="blood_trancefusion_chargres" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="physio_therapy_stress_test" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="medicine" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="total_bill" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="service_charges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="bill_amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="deposit" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="total_amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="is_paid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="adavancd" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="day_of_admit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stay_charges_iccu_nicu_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stay_charges_delux_spl_genral_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="emergency_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dressing_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="multipara_monitor_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ecg_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="oxygen_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ventilator_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="anaeshtetist_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="consultation_charges_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="consultation_charges1_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="consultation_charges2_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="assistant_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="pathology_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="surgeon_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="sonography_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="nebulisation_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="bedside_sonography_2decho_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="bedside_portable_x_Ray_x_ray" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="bedside_portable_x_Ray_x_ray_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ryles_tube_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="intubation_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="syringe_pump_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="cathetor_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="surgical_instrument_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="central_line_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="nursing_charges_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="gastric_lavag_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="blood_trancefusion_chargres_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="physio_therapy_stress_test_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="medicine_nos" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="special_visit" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="special_visit_nos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="invoice_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_ipd_registration" Member="palm_ipd_registrations">
+    <Type Name="palm_ipd_registration">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="prn" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="room_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bed_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="department_code" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="consultant_doctor_name" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="consultant1_doctor_name" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="consultant2_doctor_name" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="emp_code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[date_of admission]" Member="date_of_admission" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time_admission" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="inserted_by" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="room_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date_of_discharge" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="time_of_discharge" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="follow_up" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="follow_up_time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="operative_note" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palm_bed_category" Member="palm_bed_categories">
+    <Type Name="palm_bed_category">
+      <Column Name="bed_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="bed_no" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="room_no" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="pateint_code" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="pateint_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="prn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

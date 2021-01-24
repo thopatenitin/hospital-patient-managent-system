@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data; 
+using System.Data.SqlClient;
+using BLL;
+using presentation;
+public partial class USERCONTROL_patient_master : System.Web.UI.UserControl
+{
+  
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    clsbusslayer obj = new clsbusslayer();
+    presentationlayer objp = new presentationlayer();
+    protected void Grid_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Session["data_id"] = Grid.SelectedRow.Cells[0].Text;
+        MultiView1.ActiveViewIndex= 1;
+        Label2.Text = Session["data_id"].ToString();
+        Label4.Text= Grid.SelectedRow.Cells[2].Text;
+        Label8.Text= Grid.SelectedRow.Cells[4].Text;
+        Label12.Text= Grid.SelectedRow.Cells[5].Text;
+        TextBox21.Text = obj.getopdbll(Grid.SelectedRow.Cells[0].Text);
+        DataSet ds = new DataSet();
+
+        ;
+             // Label4.Text = ds.Rows[0]["pateint_name"].ToString();
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        objp.built = TextBox2.Text;
+            objp.pulse= TextBox26.Text;
+        objp.bp= TextBox5.Text;
+        objp.rr= TextBox3.Text;
+        objp.pallor= TextBox27.Text;
+        objp.cyanosis= TextBox2.Text;
+        objp.clubing= TextBox4.Text;
+        objp.peripheral_pulse= TextBox28.Text;
+        objp.jvp= TextBox2.Text;
+        objp.hjr= TextBox29.Text;
+        objp.oedema= TextBox32.Text;
+        objp.adenopathy= TextBox2.Text;
+        objp.icterus= TextBox30.Text;
+        objp.erruptions= TextBox33.Text;
+        objp.other= TextBox47.Text;
+        objp.cvs= TextBox36.Text;
+        objp.r_s= TextBox42.Text;
+        objp.p_a= TextBox43.Text;
+        objp.cns= TextBox44.Text;
+        objp.ps_pv= TextBox45.Text;
+        objp.opd_code = TextBox21.Text;
+        objp.ref_doctor = TextBox25.Text;
+        objp.department = DropDownList5.Text;
+        objp.con_doctor = DropDownList3.Text;
+        objp.pateint_code = Grid.SelectedRow.Cells[0].Text;
+        objp.emp_code = DropDownList3.SelectedValue;
+        objp.is_check_in = "1";
+        obj.opdreg(objp);
+        MultiView1.ActiveViewIndex = 0;
+
+    }
+}

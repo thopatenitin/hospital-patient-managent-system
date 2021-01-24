@@ -1,0 +1,32 @@
+﻿#submenu {
+margin:0;padding:0;float:left;
+}
+    #submenu li {
+    list-style:none;
+    background:#fff;
+    width:170px; 
+    border-bottom:1px solid #666; 
+   
+    } #submenu li a {
+       display:block;padding:20px;border-left:4px solid #444; text-decoration:none; box-shadow:2px 2px 5px #ccc;
+             }
+      #submenu li a {
+        border-left:4px solid #069; background:#f8f8f8;
+        }
+.background {
+    background-color:black;
+    filter:alpha(opacity=90);
+    opacity:0.8;
+
+}
+.popup {
+background-color:#fff;
+border-width:3px;
+border-style:solid;
+border-color:black;
+padding-top:10px;
+padding-left:10px;
+width:400px;
+height:300px;
+}
+

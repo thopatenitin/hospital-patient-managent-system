@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using BLL;
+using presentation;
+
+public partial class USERCONTROL_opd_registration : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+        Session["emp_code"] = "PBH201710181";
+        Session["opd_code"] = "OPD20171";
+        Session["pateint_code"] = "20171";
+    }
+
+    clsbusslayer obj = new clsbusslayer();
+    presentationlayer objp = new presentationlayer();
+    protected void Grid_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Session["data_id"] = Grid.SelectedRow.Cells[0].Text;
+        MultiView1.ActiveViewIndex = 1;
+        Label2.Text = Session["data_id"].ToString();
+        Label4.Text = Grid.SelectedRow.Cells[2].Text;
+        Label8.Text = Grid.SelectedRow.Cells[4].Text;
+        Label12.Text = Grid.SelectedRow.Cells[5].Text;
+        TextBox21.Text = obj.getopdbll(Grid.SelectedRow.Cells[0].Text);
+        DataSet ds = new DataSet();
+
+        ;
+        // Label4.Text = ds.Rows[0]["pateint_name"].ToString();
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        objp.built = TextBox2.Text;
+        objp.pulse = TextBox26.Text;
+        objp.bp = TextBox5.Text;
+        objp.rr = TextBox3.Text;
+        objp.pallor = TextBox27.Text;
+        objp.cyanosis = TextBox2.Text;
+        objp.clubing = TextBox4.Text;
+        objp.peripheral_pulse = TextBox28.Text;
+        objp.jvp = TextBox2.Text;
+        objp.hjr = TextBox29.Text;
+        objp.oedema = TextBox32.Text;
+        objp.adenopathy = TextBox2.Text;
+        objp.icterus = TextBox30.Text;
+        objp.erruptions = TextBox33.Text;
+        objp.other = TextBox47.Text;
+        objp.cvs = TextBox36.Text;
+        objp.r_s = TextBox42.Text;
+        objp.p_a = TextBox43.Text;
+        objp.cns = TextBox44.Text;
+        objp.ps_pv = TextBox45.Text;
+        objp.opd_code = TextBox21.Text;
+        objp.ref_doctor = TextBox25.Text;
+        objp.department = DropDownList5.SelectedValue;
+        objp.con_doctor = DropDownList3.SelectedValue;
+        objp.pateint_code = Grid.SelectedRow.Cells[0].Text;
+        objp.emp_code = Session["emp_code"].ToString();
+        objp.is_check_in = "1";
+        obj.opdreg(objp);
+        String cashmemo= obj.getcashmemo(); 
+        DataClassesDataContext df = new DataClassesDataContext();
+        palm_opd_Bill_master bill_master = new palm_opd_Bill_master();
+       bill_master.cash_memo =cashmemo;
+        bill_master.pateint_code = Session["pateint_code"].ToString(); ;
+        bill_master.opd_code = Session["opd_code"].ToString();
+        bill_master.cash_memo = cashmemo;
+        bill_master.emp_id= Session["emp_code"].ToString();
+        bill_master.inserted_by = Session["emp_code"].ToString();
+        bill_master.inserted_on =DateTime.Now;
+        df.palm_opd_Bill_masters.InsertOnSubmit(bill_master);
+        df.SubmitChanges();
+        palm_opd_Bill_slave bill_slave = new palm_opd_Bill_slave();
+       
+        bill_slave.opd_bill_id= bill_master.cash_memo;
+        bill_slave.charge_name ="Consulting";
+        bill_slave.description= "Consulting";
+        bill_slave.units =1;
+        bill_slave.amount =200;
+        df.palm_opd_Bill_slaves.InsertOnSubmit(bill_slave);
+        df.SubmitChanges();
+        palm_pateint_master ppm = new palm_pateint_master();
+        palm_pateints_profile ppp = new palm_pateints_profile();
+        palm_opd_patient pop = new palm_opd_patient();
+        palm_doctor_employee pde = new palm_doctor_employee();
+        bill_master = df.palm_opd_Bill_masters.Single(palm_opd_Bill_master=>palm_opd_Bill_master.cash_memo==cashmemo);
+        Label76.Text = bill_master.cash_memo;
+        Label81.Text = bill_master.pateint_code;
+        pde = df.palm_doctor_employees.Single(palm_doctor_employee => palm_doctor_employee.emp_code == bill_master.emp_id);
+        Label78.Text = pde.doctor_name;
+        Label79.Text = pde.department;
+        ppm = df.palm_pateint_masters.Single(palm_pateint_master => palm_pateint_master.pateint_code == bill_master.pateint_code);
+        Label77.Text=ppm.pateient_title+" ."+ppm.pateient_last_name+" "+ppm.pateient_first_name+" "+ppm.pateient_middle_name;
+        Label84.Text = ppm.gender;
+        ppp = df.palm_pateints_profiles.Single(palm_pateints_profile=>palm_pateints_profile.pateint_code == bill_master.pateint_code);
+        Label80.Text = ppp.ref_doc;
+        Label83.Text = ppp.age;
+        Label82.Text = Convert.ToString(bill_master.inserted_on);
+        bill_slave = df.palm_opd_Bill_slaves.Single(palm_opd_Bill_slave=>palm_opd_Bill_slave.opd_bill_id==bill_master.cash_memo);
+        Label86.Text = Convert.ToString(bill_slave.amount);
+        Label87.Text= Convert.ToString(bill_slave.amount);
+        Label90.Text= Convert.ToString(bill_slave.amount);
+        Label91.Text = Convert.ToString(bill_slave.amount);
+
+        MultiView1.ActiveViewIndex = 3;
+
+    }
+
+    protected void Button6_Click(object sender, EventArgs e)
+    {
+        MultiView1.ActiveViewIndex = 0;
+    }
+}

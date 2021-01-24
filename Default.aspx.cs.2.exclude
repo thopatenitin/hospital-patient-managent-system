@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        gridbind();
+    }
+    public void gridbind()
+    {
+        DataTable dt = new DataTable();
+        dt.Columns.Add("Memorandum Of Charge", typeof(int));
+        dt.Columns.Add("Memorandum OfCharge", typeof(int));
+        dt.Columns.Add("MemorandumOf Charge", typeof(int));
+        dt.Columns.Add("MemorandumOfcharge", typeof(int));
+        DataRow dtrow = dt.NewRow();
+        dtrow = dt.NewRow();              // Create New Row
+        dtrow["Memorandum Of Charge"] = 3;              //Bind Data to Columns
+        dtrow["Memorandum OfCharge"] = 1;
+        dtrow["MemorandumOf Charge"] = 1;
+        dtrow["MemorandumOfcharge"] = 1;
+        dt.Rows.Add(dtrow);
+        GridView1.DataSource = dt;
+        GridView1.DataBind();
+    }
+}

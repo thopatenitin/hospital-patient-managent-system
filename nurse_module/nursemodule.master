@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="nursemodule.master.cs" Inherits="nuese_module_nursemodule" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../theme/mastertheme.css" rel="stylesheet" type="text/css" />
+    <link href="../theme/vmenu.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+            .auto-style5 {
+                width: 136%;
+            }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="auto-style13" >
+
+        <table style="padding:0;margin:0;" id="auto-style15">
+    <tr>
+           <td  id="css4" >
+               <asp:Image ID="Image2" runat="server" Height="66px" ImageUrl="~/NewFolder1/logo.png" Width="203px" />
+           </td>
+            <td  id="css6" >
+                  <asp:Label ID="Label1" runat="server" Text="PALM BEACH " Font-Bold="True" Font-Italic="True" Font-Size="29pt" ForeColor="Black"></asp:Label>&nbsp;<asp:Label ID="Label3" runat="server" ForeColor="Black" Text="Hospital &amp; Diagnostic Center"></asp:Label>
+           </td>
+               </tr>
+    <tr>
+            <td  id="css5" >
+                <asp:Image ID="Image1" runat="server" Height="54px" ImageUrl="~/NewFolder1/thZKY6CTL4.jpg" Width="49px" />
+                <asp:LinkButton ID="LinkButton2" runat="server" ></asp:LinkButton>
+            </td>
+            <td id="css7" >
+                
+                <table class="auto-style5">
+                    <tr>
+                        <td>
+                
+                <asp:Label ID="Label2" runat="server" Text="Dashboard"></asp:Label>
+            
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/NewFolder1/arrow-back-icon.png" Width="43px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ImageButton2" runat="server" Height="51px" ImageUrl="~/NewFolder1/home-128.png" OnClick="ImageButton2_Click" Width="53px" />
+&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                        <td >
+            
+            
+                <asp:LinkButton ID="LinkButton45" runat="server" OnClick="LinkButton45_Click">LogOut</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+               </tr>
+             <tr>
+            <td  id="css2"  >
+                 <asp:Panel ID="Panel6" runat="server" Height="683px" CssClass="panalcss" Width="199px">
+                 <ul id="nav">
+        <li id="auto-style14" ><asp:LinkButton ID="LinkButton39" runat="server" >Dashboard</asp:LinkButton></li>
+        <li><asp:LinkButton ID="LinkButton46" runat="server" OnClick="LinkButton46_Click">Billing</asp:LinkButton>
+            
+
+        </li>
+        <li><a href="#">patient Management</a>
+            <ul>
+                                <li>
+
+                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="new_pateint_click">New Patient</asp:LinkButton></li>
+                <li>
+
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="pateint_master_click" >Patient Master</asp:LinkButton></li>
+                <li><a href="#">IPD</a><ul><li><asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" >Admit Patient</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton9" runat="server" >In-Patient Enquiry</asp:LinkButton></li>
+                    </ul></li>
+                <li><a href="#">OPD</a>
+                    <ul><li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" >OPD Registration</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" >Out-Patient Enquiry</asp:LinkButton></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click" >Room Management </asp:LinkButton>
+            <ul><li><asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton14_Click" >Room Enquiry</asp:LinkButton></li>
+               <li> <asp:LinkButton ID="LinkButton15" runat="server">Room Category</asp:LinkButton></li>
+                <li> <asp:LinkButton ID="LinkButton16" runat="server" >Room Master</asp:LinkButton></li>
+                <li> <asp:LinkButton ID="LinkButton17" runat="server">Room Bed Master</asp:LinkButton></li>
+            </ul>
+        </li>
+        <li><a href="#">Nurse Module</a>
+            <ul>
+<li><asp:LinkButton ID="LinkButton18" runat="server">Patient Medication</asp:LinkButton></li>
+ <li><asp:LinkButton ID="LinkButton20" runat="server" >Intake/Output Record</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton21" runat="server" >Nurse Progress Note</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton22" runat="server" >Vital Sign</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton23" runat="server" >Bed Side Procedure</asp:LinkButton></li>
+   <li><asp:LinkButton ID="LinkButton24" runat="server" >IP Room Transfer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton25" runat="server" >Patient History</asp:LinkButton></li>
+    <li><asp:LinkButton ID="LinkButton19" runat="server" >Discharge Summary</asp:LinkButton></li>
+            </ul>
+        </li>
+                     <li><a href="#">Report Generation</a></li>
+                     <li><a href="#">User Profiler</a></li>
+
+    </ul>
+                 </asp:Panel>
+                 </td>
+            <td style="vertical-align:top; " id="css1" >
+                 <asp:ContentPlaceHolder id="Content_td" runat="server">
+        
+                     <p>
+                         &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                 </td>
+               </tr>
+             </table>
+    </div>
+
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.25, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2f715e7e-6813-4200-91d3-34dce6e82218" isExpanded="false" absoluteBounds="6.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/employee_master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb3aa9ce-2952-4edb-88ba-9a03e79a7fff" absoluteBounds="6.39, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c6bebb2-7f7e-40da-ba39-f332ed6d4314" isExpanded="false" absoluteBounds="2.625, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/employee_registration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fa7d2be-2b56-4dbf-9b05-a8bfe4437235" absoluteBounds="2.6399999999999997, 1.71, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a9a4724-4e13-4824-862d-0dac5e5ba818" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc4b69da-229b-4417-b3b8-5550737be619" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b75a2cd2-6266-426b-a9b7-8f7eaf1d130a" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_doctor_employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dca68807-ddbb-4102-907a-7bd39a217f65" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e457db49-12f3-48e9-b51e-91cfcaf79f75" isExpanded="false" absoluteBounds="10.75, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_Bill_master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="815c0630-9731-46ee-a5b2-367634337ece" absoluteBounds="10.765, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e399768-aba2-42a6-9fc2-27f553760095" isExpanded="false" absoluteBounds="12.375, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_complain" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd807fe7-4dd4-4b3f-ae0c-bf618a46f852" absoluteBounds="12.39, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8636ffcb-5ad4-4dcd-b6af-96769b71609d" isExpanded="false" absoluteBounds="12.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_genralexamination" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b261ce5-4cb3-43aa-b46a-ea3b88313300" absoluteBounds="12.515, 0.96, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0222597d-74db-4567-b376-cb621b9c1b18" isExpanded="false" absoluteBounds="10.5, 2.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_history" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e6f10b0-0b66-45e4-86e4-dc0429571520" absoluteBounds="10.515, 2.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0150617d-d09c-4283-b152-0bce07dfb8ab" isExpanded="false" absoluteBounds="10.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_medication" />
+      <nestedChildShapes>
+        <elementListCompartment Id="472b1905-0d79-488e-9df8-96d0f4f25cf9" absoluteBounds="10.765, 0.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3ff6978-8244-4a6f-b6e3-c43ffaaf44e2" isExpanded="false" absoluteBounds="6.875, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_pathlogy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64a43fab-1e42-482b-99ee-ba3e91fb4aee" absoluteBounds="6.8900000000000006, 2.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1aae4129-3b61-43a7-9026-a3b5de7f1a05" isExpanded="false" absoluteBounds="10.125, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="856f9cdd-e9ea-492f-91c7-b45480fa9fb0" absoluteBounds="10.14, 4.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06aea7ff-63df-4244-a1be-3e50a390735d" isExpanded="false" absoluteBounds="7.25, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_registration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1a35e85-a5c4-451b-97c7-62075f92132c" absoluteBounds="7.2650000000000006, 2.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.725); (9.5625 : 2.725); (9.5625 : 1.7625); (14.4375 : 1.7625); (14.4375 : 1.04375); (13.5 : 1.04375); (13.5 : 0.95)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/palm_opd_registration/palm_opd_registration_palm_opd_genralexamination" />
+      <nodes>
+        <classShapeMoniker Id="06aea7ff-63df-4244-a1be-3e50a390735d" />
+        <classShapeMoniker Id="8636ffcb-5ad4-4dcd-b6af-96769b71609d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1d9d606f-cc2d-4b41-a638-5d8ec684515d" isExpanded="false" absoluteBounds="14, 2.875, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_Bill_slave" />
+      <nestedChildShapes>
+        <elementListCompartment Id="528ba4ba-3bc9-4747-ac30-d8b1ae5a6ead" absoluteBounds="14.015, 3.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="430afae8-b643-459d-8469-b3eac27600d1" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/pathology_test_report" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1d05c06-29e2-4d9f-8630-1809f6994d65" absoluteBounds="0.51499999999999968, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c8bb79e-a308-4b11-9aa8-6ba0a808499f" isExpanded="false" absoluteBounds="2.625, 0.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_lft" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7699f208-0e6e-4fff-b86a-edc7a98ac6bf" absoluteBounds="2.64, 1.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c30e333-0c19-4388-a09d-78cd3b8d6393" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_urine_routine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b46ddde-2cce-43cb-b3aa-09d781d3889e" absoluteBounds="0.51500000000000012, 3.46, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65ba1e5c-ead9-4282-9ff1-2c292fd7fdab" isExpanded="false" absoluteBounds="2.625, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_bg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43565351-8de7-4f37-9fbc-ce755f712afe" absoluteBounds="2.6399999999999997, 2.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de828304-03fc-4f79-b0dc-95de5b0335eb" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_crp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0ace402-dd14-4dcf-8880-b1a75570d7d0" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8474ed2f-56f0-4f34-a330-a4d8e7110cb8" isExpanded="false" absoluteBounds="2.75, 2.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_dengue_igm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3e5aa69-2546-4470-aff9-94b2e541b03e" absoluteBounds="2.7649999999999997, 3.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fb0f856-62d9-42fd-b06a-671aa3c1edef" isExpanded="false" absoluteBounds="2.75, 3.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_uric_acid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8dcde0e-cbe4-4292-86cf-844e1699a027" absoluteBounds="2.7649999999999997, 3.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83c49ee2-f17f-434e-8c4d-ca1b4dd14b39" isExpanded="false" absoluteBounds="2.75, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_stool_routine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aee1d144-ad53-4e51-88e9-cab9a2581a36" absoluteBounds="2.765, 4.335, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0842d193-89a2-4c10-b587-1eda5df8a9d3" isExpanded="false" absoluteBounds="2.875, 5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_mp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c932afc9-de11-4314-a904-0e656a89cf96" absoluteBounds="2.8899999999999997, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b49a7fb-efdc-41f3-ac0c-f4a00c656b1c" isExpanded="false" absoluteBounds="5, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_provisional_diagnosi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f18c626-6154-489d-b26d-a7639abfc26e" absoluteBounds="5.015, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="beb1bb43-3597-408e-9274-8ba8250fd9d9" isExpanded="false" absoluteBounds="4.875, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_final_diagnosi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4045d94-f79a-4ed4-8c7c-9114385577a4" absoluteBounds="4.89, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="589df803-4d74-4e92-bfde-6c90bb272618" isExpanded="false" absoluteBounds="4.875, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_diagnosis_master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0b2812c-e1a0-4029-b105-cf6027419a74" absoluteBounds="4.89, 2.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf6366d7-b268-463c-8632-353ab2cb6133" isExpanded="false" absoluteBounds="4.875, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_hbsag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80327924-c66e-40e6-b806-0135476e899c" absoluteBounds="4.89, 5.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fa1735c-ed05-461e-87fe-a8985a00cfc4" isExpanded="false" absoluteBounds="4.5, 1, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_dengue_ns1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2dbf2e82-68f2-4e5d-8a03-60d4f96620c9" absoluteBounds="4.515, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ad390c1-fd8f-42ff-9c01-391aa398a7a6" isExpanded="false" absoluteBounds="5.25, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_lp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfd644c8-37cd-4e93-9813-e0dc920177d2" absoluteBounds="5.265, 5.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4a166b8-4360-4273-bce8-1ed1445d831a" isExpanded="false" absoluteBounds="3, 5.75, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_cbc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5726e1d-2195-4272-8678-f8da4784bdfb" absoluteBounds="3.015, 6.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea8cd406-8c46-4eaa-8e1d-f7610e037cb9" isExpanded="false" absoluteBounds="7.25, 3.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_calcium" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5ccc6a5-0a05-4698-9ca7-d3513487360b" absoluteBounds="7.2650000000000006, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53a8342f-a727-4808-988e-bb4c0e913701" isExpanded="false" absoluteBounds="4.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_vitb12" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3344c68b-685e-4212-ba3c-4122443431a4" absoluteBounds="4.515, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b837d162-9b07-400b-ba68-7980b6601063" isExpanded="false" absoluteBounds="7.25, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_vitd3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1da19d6e-b9dc-4875-981a-c5ce5511aa19" absoluteBounds="7.2650000000000006, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d24b26bf-751b-4bcd-93d8-56f9d1112eb2" isExpanded="false" absoluteBounds="2.875, 4.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_bt_ct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5629733-a3a7-4923-b722-d89fdfe30685" absoluteBounds="2.89, 4.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9cceb7d6-e8b1-4a72-8e5d-093d94a18b0d" isExpanded="false" absoluteBounds="9.875, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_lipase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8e52430-3627-4189-bf05-5aa7f86ec10a" absoluteBounds="9.89, 5.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0075936f-6532-41dc-a794-58ec09b59992" isExpanded="false" absoluteBounds="9.625, 2.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_widal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cca3b265-1256-45ff-a841-06c8fd7af7ff" absoluteBounds="9.64, 3.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31b8dd15-7915-47e7-b51a-0fb13811836a" isExpanded="false" absoluteBounds="0.625, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_cpk" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28f0d2b9-1016-4f73-b246-7ff09edcf8bd" absoluteBounds="0.63999999999999968, 4.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39fb655a-1fc5-4deb-9675-58fdbc1eb0e2" isExpanded="false" absoluteBounds="0.875, 5.75, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_creatnine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8cc3b684-766a-4330-8871-1dcfee30dde0" absoluteBounds="0.88999999999999968, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28c6e591-6ce2-4b33-8ff8-792dc838a2b0" isExpanded="false" absoluteBounds="3.125, 6.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_vdrl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0d15557-a198-4b09-9e99-369c470a23e4" absoluteBounds="3.1399999999999997, 6.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7df98e77-117c-449b-88cc-698f83f6a785" isExpanded="false" absoluteBounds="5.625, 6.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_g6pd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04965d20-1318-4f55-8f67-b3437a7105a5" absoluteBounds="5.6400000000000006, 6.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d85b64b-3a4b-4e28-ace1-0c7514b8956b" isExpanded="false" absoluteBounds="5, 3.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_hcv" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62ab6855-23f8-4436-b0b4-dfc69bf5d645" absoluteBounds="5.015, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43a474e2-3545-40ee-9229-fe43aaa3ec32" isExpanded="false" absoluteBounds="0.625, 7.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_electrolyte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a35109df-f3a1-448f-9c7f-6ece0d234835" absoluteBounds="0.63999999999999968, 7.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53fe3f2e-4a7a-490e-810c-423bf5199be8" isExpanded="false" absoluteBounds="7, 4.75, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_ra_test" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f91c4807-5e00-4c44-b0c0-32024a974ec0" absoluteBounds="7.0150000000000006, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="034ff4f0-35d1-497d-98cf-096f785a1cb5" isExpanded="false" absoluteBounds="7.25, 4.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_fbs_plb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="323ec2c1-7e9c-4644-bb98-e5b22dcb5846" absoluteBounds="7.2650000000000006, 4.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f552693c-a44c-4c44-8f93-2b5bf9923bd8" isExpanded="false" absoluteBounds="0.5, 6.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_hba1c" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f60c9702-8051-4f7d-badd-fb260f8d27cd" absoluteBounds="0.51500000000000012, 6.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc285c4b-3823-48d0-b60a-48b21ee7a954" isExpanded="false" absoluteBounds="6.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_pathlogy_slave" />
+      <nestedChildShapes>
+        <elementListCompartment Id="771006eb-2286-4925-b897-d405b1683851" absoluteBounds="6.515, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d4cc6d3-b1fa-495e-9e29-3b951ae5c993" isExpanded="false" absoluteBounds="0.625, 5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_amylase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee94ae9b-9dcd-40f4-b95a-46522b5563d7" absoluteBounds="0.64000000000000012, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bd3c360-d08a-4728-8828-89f102f4ba23" isExpanded="false" absoluteBounds="5.125, 4.125, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_esr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="020fba2b-670a-4548-a3ce-a42c90eeec08" absoluteBounds="5.14, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="addbb4a9-69ac-4c2a-88ea-364787e89f21" isExpanded="false" absoluteBounds="7.625, 7.625, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_pathlogy_billm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0d8a3f7-44d4-4735-a033-b08c843fdaf2" absoluteBounds="7.64, 8.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e34b000-6cfb-4d1a-a934-6bd773c8d137" isExpanded="false" absoluteBounds="3.25, 7.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_rb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="302d8690-38af-4c8b-81fe-cafb222f31dc" absoluteBounds="3.2649999999999997, 7.7100000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7d19bb9-6b10-4469-958c-64c6d0039259" isExpanded="false" absoluteBounds="0.625, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pathology_rft" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1593d058-10c3-48d0-84c5-18f3e0f82695" absoluteBounds="0.63999999999999968, 4.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cacc62e6-18e6-4cd8-a86f-0df9107362ef" isExpanded="false" absoluteBounds="8.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pateint_master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4863d93c-38bb-4f5c-97c5-ab33381d2ba9" absoluteBounds="8.515, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a9741ec-a7e3-478f-aedf-557c495ea178" isExpanded="false" absoluteBounds="8.25, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_pateints_profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a4d8aa2-da3c-4cba-ae62-1469ce3f4245" absoluteBounds="8.265, 1.71, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="281fe3f2-1f57-4577-ae98-c85809aa1cd2" isExpanded="false" absoluteBounds="10.125, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesDataContext/palm_opd_pathlogy_bill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b98170c-aa4c-4f86-ad6f-7ce7935950e4" absoluteBounds="10.14, 5.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

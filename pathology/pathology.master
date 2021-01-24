@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="pathology.master.cs" Inherits="pathology_pathology" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../theme/mastertheme.css" rel="stylesheet" type="text/css" />
+    <link href="../theme/vmenu.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+            .auto-style5 {
+                width: 136%;
+            }
+        </style>
+
+</head>
+<body>
+   <form id="form1" runat="server">
+         <div id="auto-style13" >
+
+        <table style="padding:0;margin:0;" id="auto-style15">
+    <tr>
+           <td  id="css4" >
+               <asp:Image ID="Image2" runat="server" Height="66px" ImageUrl="~/NewFolder1/logo.png" Width="203px" />
+           </td>
+            <td  id="css6" >
+                  <asp:Label ID="Label1" runat="server" Text="PALM BEACH " Font-Bold="True" Font-Italic="True" Font-Size="29pt" ForeColor="Black"></asp:Label>&nbsp;<asp:Label ID="Label3" runat="server" ForeColor="Black" Text="Hospital &amp; Diagnostic Center"></asp:Label>
+           </td>
+               </tr>
+    <tr>
+            <td  id="css5" >
+                <asp:Image ID="Image1" runat="server" Height="54px" ImageUrl="~/NewFolder1/thZKY6CTL4.jpg" Width="49px" />
+                <asp:LinkButton ID="LinkButton2" runat="server" ></asp:LinkButton>
+            </td>
+            <td id="css7" >
+                
+                <br />
+                
+                <table class="auto-style5">
+                    <tr>
+                        <td>
+                
+                <asp:Label ID="Label2" runat="server" Text="Dashboard"></asp:Label>
+            
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/NewFolder1/arrow-back-icon.png" OnClick="ImageButton1_Click" Width="52px" />
+                        </td>
+                        <td >
+            
+            
+                <asp:LinkButton ID="LinkButton45" runat="server" OnClick="LinkButton45_Click">LogOut</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+               </tr>
+             <tr>
+            <td  id="css2"  >
+                 <asp:Panel ID="Panel6" runat="server" Height="683px" CssClass="panalcss" Width="199px">
+                 <ul id="nav">
+        <li id="auto-style14" ><asp:LinkButton ID="LinkButton39" runat="server" >Dashboard</asp:LinkButton></li>
+                     <li id="auto-style14" ><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" >IPD</asp:LinkButton></li>
+                     <li id="auto-style14" ><asp:LinkButton ID="LinkButton" runat="server" OnClick="LinkButton_Click" >OPD</asp:LinkButton></li>
+                    <li> <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server" >User Profile</asp:LinkButton></li>
+</ul>
+    
+                 </asp:Panel>
+                 </td>
+            <td style="vertical-align:top; " id="css1" >
+                 <asp:ContentPlaceHolder id="Content_td" runat="server">
+        
+                     <p>
+                         &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                 </td>
+               </tr>
+             </table>
+    </div>
+
+   
+    </form>
+</body>
+</html>

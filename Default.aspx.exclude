@@ -1,0 +1,170 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="theme/vmenu.css" rel="stylesheet" />
+    <style type="text/css">
+        #auto-style1 {
+            height: 33px;
+           background-color: DeepSkyBlue;
+           font-family:'Bernard MT';
+            width: 662px;
+        }
+        #auto-style2 {
+            height: 33px;
+            width: 137px;
+           background-color:#0099FF;
+        }
+        #auto-style3 {
+            
+            vertical-align:top;
+           
+            background-color:#fff;
+            width: 137px;
+            height: 346px;
+        }
+        .auto-style9 {
+            height: 24px;
+        }
+        .auto-style10 {
+            height: 61px;
+            background-color:#fff;
+            vertical-align:top;
+            width: 137px;
+        }
+        .auto-style11 {
+             background-color:#fff;
+            height: 61px;
+            width: 662px;
+        }
+               
+        .auto-style13 {
+            width: 1038px;
+            height: 786px;
+        }
+       
+        .auto-style14 {
+            height: 64px;
+        }
+       
+        .auto-style15 {
+            height: 859px;
+            width: 1034px;
+        }
+       
+        .auto-style16 {
+            margin-right: 6px;
+        }
+       
+    </style>
+   
+</head>
+
+<body style="height: 859px">
+    <form id="form1" runat="server">
+    <div class="auto-style13" >
+        <table style="padding:0;margin:0;" class="auto-style15">
+    <tr>
+            <td id="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+            <td id="auto-style1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Text="Hospital Management System"></asp:Label>
+            </td>
+               </tr>
+    <tr>
+            <td class="auto-style10" >
+                <asp:Image ID="Image1" runat="server" Height="54px" ImageUrl="~/NewFolder1/thZKY6CTL4.jpg" Width="49px" />
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">User Name</asp:LinkButton>
+            </td>
+            <td class="auto-style11">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" Text="Dashboard"></asp:Label>
+            </td>
+               </tr>
+             <tr>
+            <td id="auto-style3">
+                 <asp:Panel ID="Panel6" runat="server" Height="377px" CssClass="auto-style16">
+                 <ul id="nav">
+        <li class="auto-style14" ><a href="#">Dashboard</a></li>
+        <li><a href="#" class="auto-style9">Biling</a></li>
+                     <li><asp:LinkButton ID="LinkButton10" runat="server" OnClick="LinkButton2_Click">EMR</asp:LinkButton>
+                         <ul><li><asp:LinkButton ID="LinkButton11" runat="server" OnClick="LinkButton2_Click">In-Patient EMR</asp:LinkButton></li>
+                             <li><asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton2_Click">Out-Patient EMR</asp:LinkButton></li>
+                         </ul>
+                     </li>
+        <li><a href="#">patient Management</a>
+            <ul>
+                <li><a href="Default2.aspx">
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton2_Click">Patient12</asp:LinkButton></li>
+                <li><a href="#">IPD</a><ul><li><asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton2_Click">Admit Patient</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton9" runat="server" OnClick="LinkButton2_Click">In-Patient Enquiry</asp:LinkButton></li>
+                    </ul></li>
+                <li><a href="#">OPD</a>
+                    <ul><li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">OPD Registration</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Out-Patient Enquiry</asp:LinkButton></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton2_Click">Room Management </asp:LinkButton>
+            <ul><li><asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton2_Click">Room Enquiry</asp:LinkButton></li>
+               <li> <asp:LinkButton ID="LinkButton15" runat="server" OnClick="LinkButton2_Click">Room Category</asp:LinkButton></li>
+                <li> <asp:LinkButton ID="LinkButton16" runat="server" OnClick="LinkButton2_Click">Room Master</asp:LinkButton></li>
+                <li> <asp:LinkButton ID="LinkButton17" runat="server" OnClick="LinkButton2_Click">Room Bed Master</asp:LinkButton></li>
+            </ul>
+        </li>
+        <li><a href="#">Nurse Module</a>
+            <ul>
+<li><asp:LinkButton ID="LinkButton18" runat="server" OnClick="LinkButton2_Click">Patient Medication</asp:LinkButton></li>
+ <li><asp:LinkButton ID="LinkButton20" runat="server" OnClick="LinkButton2_Click">Intake/Output Record</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton21" runat="server" OnClick="LinkButton2_Click">Nurse Progress Note</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton22" runat="server" OnClick="LinkButton2_Click">Vital Sign</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton23" runat="server" OnClick="LinkButton2_Click">Bed Side Procedure</asp:LinkButton></li>
+   <li><asp:LinkButton ID="LinkButton24" runat="server" OnClick="LinkButton2_Click">IP Room Transfer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton25" runat="server" OnClick="LinkButton2_Click">Patient History</asp:LinkButton></li>
+    <li><asp:LinkButton ID="LinkButton19" runat="server" OnClick="LinkButton2_Click">Discharge Summary</asp:LinkButton></li>
+            </ul>
+        </li>
+        <li><asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton2_Click">Doctor Module</asp:LinkButton>
+            <ul><li><asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton2_Click">In-patient</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton2_Click">Out-Patient</asp:LinkButton></li>
+                    </ul>
+        </li>
+                     <li><a href="#">User Management</a>
+            <ul>
+<li><asp:LinkButton ID="LinkButton26" runat="server" OnClick="LinkButton2_Click">Add New User</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton27" runat="server" OnClick="LinkButton2_Click">User Masterlis</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton28" runat="server" OnClick="LinkButton2_Click">User Role</asp:LinkButton></li>
+   
+                     </ul></li>
+                      <li><a href="#">Administrator</a>
+            <ul>
+<li><asp:LinkButton ID="LinkButton29" runat="server" OnClick="LinkButton2_Click">Department Master </asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton30" runat="server" OnClick="LinkButton2_Click">Designation Master</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton31" runat="server" OnClick="LinkButton2_Click">Bill Group Name Master</asp:LinkButton></li>
+      <li><asp:LinkButton ID="LinkButton32" runat="server" OnClick="LinkButton2_Click">Perticular bill master</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton33" runat="server" OnClick="LinkButton2_Click">Complain Master</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton34" runat="server" OnClick="LinkButton2_Click">diagnosis Master</asp:LinkButton></li>
+      <li><asp:LinkButton ID="LinkButton35" runat="server" OnClick="LinkButton2_Click">Insurance Company</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton36" runat="server" OnClick="LinkButton2_Click">Medicine Management</asp:LinkButton></li>
+  <li><asp:LinkButton ID="LinkButton37" runat="server" OnClick="LinkButton2_Click">System Parameter</asp:LinkButton></li>
+      <li><asp:LinkButton ID="LinkButton38" runat="server" OnClick="LinkButton2_Click">System Pages</asp:LinkButton></li>
+  
+   
+                     </ul></li>
+                     <li><a href="#">Report Generation</a></li>
+                     <li><a href="#">User Profiler</a></li>
+
+    </ul>
+                 </asp:Panel>
+                 </td>
+            <td style="vertical-align:top;" >
+                &nbsp;</td>
+               </tr>
+             </table>
+    </div>
+    </form>
+</body>
+</html>

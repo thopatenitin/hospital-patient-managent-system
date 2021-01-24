@@ -1,0 +1,36 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="Default2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <asp:TreeView ID="TreeView1" runat="server" ShowLines="True" Width="100px">
+            <Nodes>
+                <asp:TreeNode Expanded="False" ImageUrl="~/thTSJ4OZYU.jpg" SelectAction="Expand" Text="Dashboard" Value="New Node">
+                    <asp:TreeNode Text="New Node" Value="New Node">
+                        <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+        <ajaxToolkit:AnimationExtender ID="TreeView1_AnimationExtender" runat="server" BehaviorID="TreeView1_AnimationExtender" TargetControlID="TreeView1">
+        </ajaxToolkit:AnimationExtender>
+    
+    </div>
+    </form>
+</body>
+</html>

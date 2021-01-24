@@ -1,0 +1,25 @@
+﻿#table tr td a{
+
+text-decoration:none;
+
+
+}
+#table tr  td {
+    background:#fff;
+    height: 60px;
+   border-left:4px solid #069;
+   box-shadow:2px 2px 5px #ccc;
+             
+    background:#fff;width:200px; border-bottom:1px solid #666;
+}
+#table tr:hover  td{
+    background:aqua;;
+    
+}
+#table {
+    border:1px;
+padding:0;
+word-spacing:0;
+
+}
+
